@@ -1,0 +1,86 @@
+<style>
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+
+<table>
+  <tr>
+    <th>Característica</th>
+    <th>PCA</th>
+    <th>UMAP</th>
+  </tr>
+  <tr>
+    <td>Propósito</td>
+    <td>Reducción de dimensionalidad lineal</td>
+    <td>Reducción de dimensionalidad no lineal</td>
+  </tr>
+  <tr>
+    <td>Tipo de transformación</td>
+    <td>Lineal</td>
+    <td>No lineal</td>
+  </tr>
+  <tr>
+    <td>Escalabilidad</td>
+    <td>Escalable a conjuntos de datos grandes</td>
+    <td>Escalable, pero puede ser más lento con conjuntos de datos muy grandes</td>
+  </tr>
+  <tr>
+    <td>Preservación de la distancia</td>
+    <td>Maximiza la varianza total</td>
+    <td>Preserva tanto la estructura local como global de los datos</td>
+  </tr>
+  <tr>
+    <td>Velocidad</td>
+    <td>Rápido</td>
+    <td>Puede ser más lento que PCA</td>
+  </tr>
+  <tr>
+    <td>Manejo de datos ruidosos</td>
+    <td>Puede verse afectado por ruido</td>
+    <td>Más robusto a datos ruidosos</td>
+  </tr>
+  <tr>
+    <td>Parámetros</td>
+    <td>Menos parámetros a ajustar</td>
+    <td>Varios parámetros a ajustar (por ejemplo, número de vecinos, distancia mínima)</td>
+  </tr>
+  <tr>
+    <td>Resultado</td>
+    <td>Componentes principales que maximizan la varianza</td>
+    <td>Mapa de baja dimensionalidad que preserva la estructura de los datos originales</td>
+  </tr>
+  <tr>
+    <td>Interpretabilidad</td>
+    <td>Fácil de interpretar los componentes principales</td>
+    <td>Menos interpretable, más centrado en la estructura global y local</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones comunes</td>
+    <td>Análisis exploratorio, preprocesamiento de datos</td>
+    <td>Visualización de datos, análisis de agrupamiento</td>
+  </tr>
+  <tr>
+    <td>Convergencia</td>
+    <td>Garantiza la convergencia</td>
+    <td>No garantiza la convergencia, depende de los parámetros</td>
+  </tr>
+  <tr>
+    <td>Sensibilidad a la escala</td>
+    
